@@ -40,8 +40,16 @@ Model weights can live outside the repository if preferred, for example:
 
 ```bash
 conda create -n qwen3-vllm python=3.12 -y
+source /root/.bashrc
+# If this is the first time `conda init` has been used in the shell:
+# conda init bash
+# source /root/.bashrc
 conda activate qwen3-vllm
 ```
+
+Note:
+- After running `conda init`, the current shell usually needs `source /root/.bashrc` before `conda activate` works.
+- If `conda activate` reports that your shell is not initialized, reload the shell config first and then retry.
 
 ## Step 2: Install Dependencies
 Install packages in the active environment.
@@ -127,6 +135,7 @@ python examples/qwen3_openai_client.py
 - `SERVED_MODEL_NAME`: the model id used by clients
 
 ## Known Pitfalls
+- If `conda activate` does not work after `conda init`, run `source /root/.bashrc` in the current shell.
 - If `vllm` is not found, verify `VLLM_BIN` points to the active conda environment.
 - If startup fails on CUDA or PyTorch issues, re-check the server image, driver, and package compatibility.
 - If requests fail with 401, confirm the request key matches one of the configured API keys.
