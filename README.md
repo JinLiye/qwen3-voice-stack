@@ -1,4 +1,4 @@
-﻿# qwen3-voice-stack
+# qwen3-voice-stack
 
 An end-to-end local voice AI stack built with Qwen3-8B, Whisper, Qwen3-TTS, vLLM, and a web demo.
 

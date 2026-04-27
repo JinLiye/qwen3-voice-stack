@@ -1,4 +1,4 @@
-﻿from openai import OpenAI
+from openai import OpenAI
 import os
 
 base_url = os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:8000/v1")

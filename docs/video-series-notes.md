@@ -1,4 +1,4 @@
-﻿# QwenDeploye v2 Video Series Notes
+# QwenDeploye v2 Video Series Notes
 
 ## Purpose
 This document is the long-term working memory for the video series around this project.

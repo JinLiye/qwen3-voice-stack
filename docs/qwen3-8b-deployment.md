@@ -1,4 +1,4 @@
-﻿# Qwen3-8B Deployment Guide
+# Qwen3-8B Deployment Guide
 
 This document defines the first reproducible milestone of the project: deploy `Qwen3-8B` with `vLLM`, expose an OpenAI-compatible API, and verify that requests succeed on a GPU server.
 
