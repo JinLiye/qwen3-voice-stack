@@ -33,7 +33,7 @@ Recommended layout on the target server:
 Model weights can live outside the repository if preferred, for example:
 
 ```text
-~/models/Qwen3-8B/
+/root/autodl-tmp/models/Qwen3-8B/
 ```
 
 ## Step 1: Create the Conda Environment
@@ -67,8 +67,18 @@ Set `MODEL_PATH` to the local path of the `Qwen3-8B` model directory.
 Example:
 
 ```bash
-mkdir -p ~/models
-# download Qwen3-8B into ~/models/Qwen3-8B
+mkdir -p /root/autodl-tmp/models
+pip install -U "huggingface_hub[cli]"
+huggingface-cli download Qwen/Qwen3-8B \
+  --local-dir /root/autodl-tmp/models/Qwen3-8B
+```
+
+If the environment uses a Hugging Face mirror, configure it first and then run the same download command:
+
+```bash
+export HF_ENDPOINT=https://hf-mirror.com
+huggingface-cli download Qwen/Qwen3-8B \
+  --local-dir /root/autodl-tmp/models/Qwen3-8B
 ```
 
 Do not commit model weights into this repository.
