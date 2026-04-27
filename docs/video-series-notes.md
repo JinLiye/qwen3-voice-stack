@@ -257,6 +257,7 @@ Append dated bullets here over time.
 - Git milestones should map to tutorial episodes for easier audience navigation.
 - This file is intended to preserve long-term planning context across future work sessions.
 - Deployment note: after `conda init`, the shell must run `source /root/.bashrc` before `conda activate` takes effect.
+- TTS milestone decision: use `Qwen3-TTS-12Hz-1.7B-CustomVoice` for the service API, and test reference-audio voice cloning separately with `Qwen3-TTS-12Hz-1.7B-Base`.
 
 ## Next Recommended Actions
 - Create a top-level public README draft

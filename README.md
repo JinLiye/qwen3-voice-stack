@@ -21,8 +21,14 @@ The current milestone covers:
 - Qwen3-8B model serving with an OpenAI-compatible API
 - Basic API verification with `curl` and the OpenAI Python SDK
 
+Additional milestone in progress:
+- local Qwen3-TTS deployment with `1.7B-CustomVoice`
+- preset-speaker synthesis over HTTP
+- separate `1.7B-Base` voice-clone experimentation path
+
 ## Quick Start
 See [docs/qwen3-8b-deployment.md](docs/qwen3-8b-deployment.md) for the step-by-step deployment guide.
+For TTS, see [docs/qwen3tts-deployment.md](docs/qwen3tts-deployment.md).
 
 ## Repository Notes
 This project is under active cleanup for public release.
