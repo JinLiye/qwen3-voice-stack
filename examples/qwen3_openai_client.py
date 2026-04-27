@@ -2,7 +2,7 @@ from openai import OpenAI
 import os
 
 base_url = os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:8000/v1")
-api_key = os.getenv("OPENAI_API_KEY", "replace-with-your-key")
+api_key = os.getenv("OPENAI_API_KEY", "abc123")
 model = os.getenv("OPENAI_MODEL", "qwen3-8b")
 
 client = OpenAI(base_url=base_url, api_key=api_key)

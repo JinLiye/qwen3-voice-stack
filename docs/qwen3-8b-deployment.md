@@ -69,7 +69,7 @@ Example:
 ```bash
 mkdir -p /root/autodl-tmp/models
 pip install -U "huggingface_hub[cli]"
-huggingface-cli download Qwen/Qwen3-8B \
+hf download Qwen/Qwen3-8B \
   --local-dir /root/autodl-tmp/models/Qwen3-8B
 ```
 
@@ -77,7 +77,7 @@ If the environment uses a Hugging Face mirror, configure it first and then run t
 
 ```bash
 export HF_ENDPOINT=https://hf-mirror.com
-huggingface-cli download Qwen/Qwen3-8B \
+hf download Qwen/Qwen3-8B \
   --local-dir /root/autodl-tmp/models/Qwen3-8B
 ```
 
